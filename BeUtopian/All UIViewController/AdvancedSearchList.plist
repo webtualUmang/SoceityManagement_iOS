@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>LeftTitle</key>
+		<string>Region</string>
+		<key>RightTitle</key>
+		<string>All Regions</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>District</string>
+		<key>RightTitle</key>
+		<string>All Districts</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>SC</string>
+		<key>RightTitle</key>
+		<string>All SCs</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>Quick SC</string>
+		<key>RightTitle</key>
+		<string>Enter</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>Order Status</string>
+		<key>RightTitle</key>
+		<string>Select</string>
+		<key>Data</key>
+		<array>
+			<dict>
+				<key>Description</key>
+				<string>Partial Order</string>
+				<key>ID</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>Description</key>
+				<string>Pending Approval</string>
+				<key>ID</key>
+				<string>2</string>
+			</dict>
+			<dict>
+				<key>Description</key>
+				<string>Approved</string>
+				<key>ID</key>
+				<string>3</string>
+			</dict>
+			<dict>
+				<key>Description</key>
+				<string>Declined</string>
+				<key>ID</key>
+				<string>4</string>
+			</dict>
+			<dict>
+				<key>Description</key>
+				<string>Temporary Price Request</string>
+				<key>ID</key>
+				<string>5</string>
+			</dict>
+			<dict>
+				<key>Description</key>
+				<string>Cancelled</string>
+				<key>ID</key>
+				<string>6</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>Order Number</string>
+		<key>RightTitle</key>
+		<string>Enter</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>Supplier Number</string>
+		<key>RightTitle</key>
+		<string>Enter</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>Date From</string>
+		<key>RightTitle</key>
+		<string>Select</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>LeftTitle</key>
+		<string>Date To</string>
+		<key>RightTitle</key>
+		<string>Select</string>
+		<key>Data</key>
+		<array/>
+	</dict>
+</array>
+</plist>

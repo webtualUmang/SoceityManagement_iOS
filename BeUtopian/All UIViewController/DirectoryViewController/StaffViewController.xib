@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StaffViewController" customModule="WGATE" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="fvI-ib-uXJ" id="aUY-CE-ftq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroud_image" translatesAutoresizingMaskIntoConstraints="NO" id="IFA-3Z-GMD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-ib-uXJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CU4-KY-A5w"/>
+                        <outlet property="delegate" destination="-1" id="teo-BL-36Y"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IFA-3Z-GMD" secondAttribute="bottom" id="0dO-rr-T9E"/>
+                <constraint firstItem="IFA-3Z-GMD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3NV-gQ-keA"/>
+                <constraint firstItem="IFA-3Z-GMD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dfd-w0-2Lv"/>
+                <constraint firstAttribute="trailing" secondItem="IFA-3Z-GMD" secondAttribute="trailing" id="PnR-xy-UX7"/>
+            </constraints>
+            <point key="canvasLocation" x="389.85507246376812" y="126.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroud_image" width="621" height="1344"/>
+    </resources>
+</document>

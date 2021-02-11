@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectAddressViewController" customModule="HomeDelight" customModuleProvider="target">
+            <connections>
+                <outlet property="btnContinues" destination="Edl-Qe-Htx" id="iGC-fP-9wW"/>
+                <outlet property="headerView" destination="uxw-od-UoX" id="pbM-HW-DjX"/>
+                <outlet property="tableview" destination="eDg-bb-Hde" id="5HV-Ue-YfD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eDg-bb-Hde">
+                    <rect key="frame" x="0.0" y="20" width="375" height="607"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Aqa-Qd-bvM"/>
+                        <outlet property="delegate" destination="-1" id="4DL-KU-Mox"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edl-Qe-Htx">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Z0g-F5-P3e"/>
+                    </constraints>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" red="0.95686274510000002" green="0.51427089709999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="BtnContinueClickWithSender:" destination="-1" eventType="touchUpInside" id="q26-x4-9yk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eDg-bb-Hde" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4Ge-O8-WKP"/>
+                <constraint firstItem="eDg-bb-Hde" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="68D-vk-iYf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Edl-Qe-Htx" secondAttribute="bottom" id="9De-Ks-kQs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Edl-Qe-Htx" secondAttribute="trailing" id="Wma-IT-qff"/>
+                <constraint firstItem="Edl-Qe-Htx" firstAttribute="top" secondItem="eDg-bb-Hde" secondAttribute="bottom" id="gsY-BX-A7v"/>
+                <constraint firstItem="eDg-bb-Hde" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nd0-du-wrT"/>
+                <constraint firstItem="Edl-Qe-Htx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vbW-gG-pCY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-180.5" y="103.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="uxw-od-UoX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add an Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQK-CR-TBe">
+                    <rect key="frame" x="10" y="10" width="315" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HbS-P2-JuI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZh-eF-cHm">
+                    <rect key="frame" x="335" y="10" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9cF-ju-8bp"/>
+                        <constraint firstAttribute="width" constant="30" id="fTN-Ie-1Ur"/>
+                    </constraints>
+                    <state key="normal" image="add_address"/>
+                    <connections>
+                        <action selector="BtnAddNewAddressClickWithSender:" destination="-1" eventType="touchUpInside" id="10c-oL-8UM"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHS-NF-wAC">
+                    <rect key="frame" x="0.0" y="48" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="7Iu-XQ-uO7"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncn-mh-be9">
+                    <rect key="frame" x="10" y="59" width="355" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="OH1-a8-bae"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZHS-NF-wAC" firstAttribute="top" secondItem="cQK-CR-TBe" secondAttribute="bottom" constant="8" id="Dqf-io-GUf"/>
+                <constraint firstAttribute="trailing" secondItem="ZHS-NF-wAC" secondAttribute="trailing" id="FH3-zE-Tvt"/>
+                <constraint firstItem="Lwt-Mu-tab" firstAttribute="trailing" secondItem="PZh-eF-cHm" secondAttribute="trailing" constant="10" id="FUl-37-cCZ"/>
+                <constraint firstItem="cQK-CR-TBe" firstAttribute="top" secondItem="Lwt-Mu-tab" secondAttribute="top" constant="10" id="HqP-AO-RD7"/>
+                <constraint firstItem="Lwt-Mu-tab" firstAttribute="bottom" secondItem="Ncn-mh-be9" secondAttribute="bottom" constant="10" id="J6a-7M-w7C"/>
+                <constraint firstItem="Ncn-mh-be9" firstAttribute="leading" secondItem="Lwt-Mu-tab" secondAttribute="leading" constant="10" id="JZv-4b-U6o"/>
+                <constraint firstItem="Lwt-Mu-tab" firstAttribute="trailing" secondItem="Ncn-mh-be9" secondAttribute="trailing" constant="10" id="OTI-MX-RlI"/>
+                <constraint firstItem="cQK-CR-TBe" firstAttribute="leading" secondItem="Lwt-Mu-tab" secondAttribute="leading" constant="10" id="Uh9-AT-7Iz"/>
+                <constraint firstItem="PZh-eF-cHm" firstAttribute="top" secondItem="Lwt-Mu-tab" secondAttribute="top" constant="10" id="Xdc-97-i0g"/>
+                <constraint firstItem="Ncn-mh-be9" firstAttribute="top" secondItem="ZHS-NF-wAC" secondAttribute="bottom" constant="10" id="Z4v-yl-EbX"/>
+                <constraint firstItem="ZHS-NF-wAC" firstAttribute="leading" secondItem="uxw-od-UoX" secondAttribute="leading" id="a6K-L1-uZt"/>
+                <constraint firstItem="PZh-eF-cHm" firstAttribute="leading" secondItem="cQK-CR-TBe" secondAttribute="trailing" constant="10" id="uZY-dR-Pzd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Lwt-Mu-tab"/>
+            <point key="canvasLocation" x="-309.5" y="-783"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_address" width="25" height="25"/>
+    </resources>
+</document>

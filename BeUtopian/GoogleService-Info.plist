@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>465881440934-h9ibpkmbmu4bdkbk0e02mufjr9ndoes4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.465881440934-h9ibpkmbmu4bdkbk0e02mufjr9ndoes4</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>465881440934-5si8tgii610q589buflplat8ddfp7iuu.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAt_ELm5oS92kQxzp712sY_7EtKG8mlelY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>465881440934</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.webtual.wgate-member</string>
+	<key>PROJECT_ID</key>
+	<string>wgate-9c32f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wgate-9c32f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:465881440934:ios:382ea4de597fd413bcca67</string>
+	<key>DATABASE_URL</key>
+	<string>https://wgate-9c32f.firebaseio.com</string>
+</dict>
+</plist>

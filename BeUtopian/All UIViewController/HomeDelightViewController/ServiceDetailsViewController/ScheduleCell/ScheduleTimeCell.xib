@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ScheduleTimeCell" customModule="HomeDelight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="333-I5-Wah">
+                        <rect key="frame" x="53" y="11" width="251" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vnO-Fg-C0K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="un_check" translatesAutoresizingMaskIntoConstraints="NO" id="maS-re-ad7">
+                        <rect key="frame" x="15" y="9" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="7sg-9Z-N5W"/>
+                            <constraint firstAttribute="width" constant="25" id="Gpc-5p-BHw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="333-I5-Wah" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="1CO-0E-P4s"/>
+                    <constraint firstAttribute="trailing" secondItem="333-I5-Wah" secondAttribute="trailing" constant="16" id="5FC-RW-PXq"/>
+                    <constraint firstItem="maS-re-ad7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YSu-3c-kAk"/>
+                    <constraint firstAttribute="bottom" secondItem="333-I5-Wah" secondAttribute="bottom" constant="11" id="haB-8g-O1B"/>
+                    <constraint firstItem="333-I5-Wah" firstAttribute="leading" secondItem="maS-re-ad7" secondAttribute="trailing" constant="13" id="hj7-5c-fRP"/>
+                    <constraint firstItem="maS-re-ad7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ori-9z-RxP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgCheck" destination="maS-re-ad7" id="sE0-7h-AeO"/>
+                <outlet property="lblTitle" destination="333-I5-Wah" id="Jc0-l0-7Ns"/>
+            </connections>
+            <point key="canvasLocation" x="-250" y="30"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="un_check" width="25" height="25"/>
+    </resources>
+</document>

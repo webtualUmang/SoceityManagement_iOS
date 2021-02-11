@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ScheduleDateCell" customModule="HomeDelight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swT-wm-hWt">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jv6-U7-X4C">
+                                <rect key="frame" x="9" y="8" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VcR-QG-cFL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feb 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPa-8P-9cg">
+                                <rect key="frame" x="9" y="32" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aMn-1k-Tmc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZPa-8P-9cg" secondAttribute="bottom" constant="7" id="HYA-DY-5EX"/>
+                            <constraint firstItem="Jv6-U7-X4C" firstAttribute="top" secondItem="swT-wm-hWt" secondAttribute="top" constant="8" id="IkA-e7-al5"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPa-8P-9cg" secondAttribute="trailing" constant="9" id="PDR-w8-iuV"/>
+                            <constraint firstItem="ZPa-8P-9cg" firstAttribute="top" secondItem="Jv6-U7-X4C" secondAttribute="bottom" constant="3" id="f88-av-Y5J"/>
+                            <constraint firstItem="ZPa-8P-9cg" firstAttribute="leading" secondItem="swT-wm-hWt" secondAttribute="leading" constant="9" id="kFA-al-yZV"/>
+                            <constraint firstItem="Jv6-U7-X4C" firstAttribute="leading" secondItem="swT-wm-hWt" secondAttribute="leading" constant="9" id="rCc-NA-N3e"/>
+                            <constraint firstAttribute="trailing" secondItem="Jv6-U7-X4C" secondAttribute="trailing" constant="9" id="yAz-0d-9Gw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="swT-wm-hWt" secondAttribute="bottom" id="EC1-WF-wXh"/>
+                <constraint firstAttribute="trailing" secondItem="swT-wm-hWt" secondAttribute="trailing" id="KAj-mb-31E"/>
+                <constraint firstItem="swT-wm-hWt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Osv-8D-e0c"/>
+                <constraint firstItem="swT-wm-hWt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cRC-Ko-98q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="bgView" destination="swT-wm-hWt" id="zrZ-qu-lEK"/>
+                <outlet property="lblDay" destination="Jv6-U7-X4C" id="m44-wT-LXd"/>
+                <outlet property="lblMonth" destination="ZPa-8P-9cg" id="dgC-xF-jWe"/>
+            </connections>
+            <point key="canvasLocation" x="-228" y="16"/>
+        </collectionViewCell>
+    </objects>
+</document>
